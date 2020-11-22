@@ -1,0 +1,303 @@
+FIRST MIGRATION 
+
+Rejected - Error on table ADDRESS_MIG, column IS_ADDRESS_PROOF_RCVD.
+ORA-12899: value too large for column IS_ADDRESS_PROOF_RCVD (actual: 47, maximum: 1)
+
+Record 1: Rejected - Error on table GROUPHOUSEHOLD_MIG, column GROUPHOUSEHOLDCODE.
+ORA-01400: cannot insert NULL into (GROUPHOUSEHOLDCODE)
+
+R00700005        MAINRETAIL_MIG        Category validation failed for CITY
+R00700006        MAINRETAIL_MIG        Category validation failed for CITY
+R00700010        MAINRETAIL_MIG        Category validation failed for CITY
+
+-------------------------------------
+R00700000        Category validation failed for categorytype PHONE_TYPE in column PhoneEmailType
+R00700003        Category validation failed for categorytype PHONE_TYPE in column PhoneEmailType
+
+R00700684 Category validation failed for categorytype EMAIL_TYPE in column PhoneEmailType
+
+R00700000        Category validation failed for categorytype TAX_SLAB in column Tax_Rate_Table_Code
+R00700001        Category validation failed for categorytype TAX_SLAB in column Tax_Rate_Table_Code
+
+R00769100        GroupID is Invalid 
+R00769100        Mapping validation failed for GROUPID and GROUPNAME 
+R00769254        GroupID is Invalid 
+R00769254        Mapping validation failed for GROUPID and GROUPNAME 
+
+Category validation failed for Relationship column and RELATION  categorytype
+
+Category validation failed for column childentitytype and CUST_TYPE categorytype
+
+R000701348        ENTITYDOCUMENT_MIG        Category validation failed for categorytype CITY in column PlaceOfIssue
+R000701352        ENTITYDOCUMENT_MIG        Category validation failed for categorytype CITY in column PlaceOfIssue
+
+62|0990100004023048|SD048|NPR|R000709182|Invalid Scheme Code : SD048, For the Account : 0990100004023048/NPR/099#
+63|0990100004024048|SD048|NPR|R000761324|Invalid Scheme Code : SD048, For the Account : 0990100004024048/NPR/099#
+
+
+1|0960100000001033|GP033|NPR|R000712759|Wrong Value For The Field, Gl Sub Head Code : [07020] #
+1|0960100000001033|GP033|NPR|R000712759|Invalid Preferential Calendar Base   [GREGORIAN] #
+2|0960100000001043|NK043|NPR|R000778395|Wrong Value For The Field, Gl Sub Head Code : [09017] #
+2|0960100000001043|NK043|NPR|R000778395|Invalid Preferential Calendar Base   [GREGORIAN] #
+3|0960100000001048|SD048|NPR|R000753329|Invalid Scheme Code : SD048, For the Account : 0960100000001048/NPR/096#
+4|0960100000001201|CA201|NPR|R000773776|Wrong Value For The Field, Gl Sub Head Code : [15001] #
+
+-------------------------------------
+   2206     1090100000016401                 R000772432          18-03-2019          36051          Wrong Value For The Field, Nature of Advance : [KF]
+
+
+   2207     1090100000017401                 R000773156          22-04-2019          36051          Wrong Value For The Field, Nature of Advance : [KF]
+
+
+   2208     1090100000018401                 R000765009          05-07-2019          36051          Wrong Value For The Field, Nature of Advance : [KF]
+
+
+   2209     1090100000019401                 R000742317          24-10-2019          36051          Wrong Value For The Field, Nature of Advance : [KF]
+
+
+   2210     1090100000020401                 R000743216          17-12-2019          36051          Wrong Value For The Field, Nature of Advance : [KF]
+
+
+   2211     1090100000021401                 R000717674          01-01-2020          36051          Wrong Value For The Field, Nature of Advance : [KF]
+
+
+   2212     1090100000022401                 R000773198          27-01-2020          36051          Wrong Value For The Field, Nature of Advance : [KF]
+
+
+   2213     1090100000023401                 R000756501          09-02-2020          36051          Wrong Value For The Field, Nature of Advance : [KF]
+
+=====================================
+
+40|0960100000020407|R000776524|17-06-2019 00:00:00|LF407|Wrong GL Sub Head - Scheme Combination :-, Gl Sub Head : [LF407] Scheme : [LF407] #
+41|0960100000021401|R000733045|15-10-2012 00:00:00|OD401|Wrong Value For The Field, Gl Sub Head Code : [OD401] #
+
+4|0960100000001122|SD122|NPR|R000794986|Module I.d of Table Code [ZEROT] is [TERM DEPOSITS], Allowed Module I.d's are [TRANSACTION ACCOUNTS & TRADE BILLS].#
+
+12|0960100000002301|CC301|NPR|R000775530|Wrong Value For The Field, Gl Sub Head Code : [11001] #
+
+50|0960100000025407|R000714784|01-09-2019 00:00:00|LF407|Wrong GL Sub Head - Scheme Combination :-, Gl Sub Head : [LF407] Scheme : [LF407] #
+51|0960100000026401|R000744020|10-12-2012 00:00:00|OD401|Wrong Value For The Field, Gl Sub Head Code : [OD401] #
+
+1|0960100000001401|R000787273|20-03-2008 00:00:00|OD401|Wrong Value For The Field, Gl Sub Head Code : [OD401] #
+1|0960100000001401|R000787273|20-03-2008 00:00:00|OD401|Wrong GL Sub Head - Scheme Combination :-, Gl Sub Head : [OD401] Scheme : [OD401] #
+2|0960100000001407|R000740514|19-12-2016 00:00:00|LF407|Wrong Value For The Field, Gl Sub Head Code : [LF407] #
+2|0960100000001407|R000740514|19-12-2016 00:00:00|LF407|Wrong GL Sub Head - Scheme Combination :-, Gl Sub Head : [LF407] Scheme : [LF407] #
+
+Wrong Value For The Field, Nature of Advance : [KF] #
+
+2052|1050100000044401|R000783046|16-05-2019 00:00:00|36051|Wrong Value For The Field, Free Code 1 : [JD] #
+
+CASA MASTER Error:
+13242|0960100008437048|||R000739525|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13243|0960100008438048|||R000749776|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13244|0960100008439048|||R000751622|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13245|0960100008440048|||R000706675|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13246|0960100008441048|||R000760517|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13247|0960100008442048|||R000767918|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13248|0960100008443048|||R000777126|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13249|0960100008444048|||R000700332|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13250|0960100008445048|||R000793116|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13251|0960100008446048|||R000743252|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13252|0960100008447048|||R000738236|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13253|0960100008448048|||R000734707|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13254|0960100008449048|||R000780965|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13255|0960100008450048|||R000772581|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13256|0960100008451048|||R000777117|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13257|0960100008452048|||R000734994|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13258|0960100008453048|||R000761522|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13259|0960100008454048|||R000751187|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13260|0960100008455048|||R000760080|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13261|0960100008456048|||R000700718|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+13262|0960100008457048|||R000789773|Invalid Date Given : Field -acct_opn_date, Value - 26-Dec-201#
+
+1|0960100000001121|NPR|096||The sol id of operative account and enetred sol id does not match :  [0960100009278048/096/001]#
+2|0960100000001123|NPR|096||The sol id of operative account and enetred sol id does not match :  [0960100007547048/096/001]#
+3|0960100000001127|NPR|096||Wrong Value For The Field, Gl Sub Head Code: [DD127] #
+
+40|0960100000014121|NPR|096||Wrong Value For The Field, Gl Sub Head Code: [FD121] #
+
+|0960100000001121|NPR|096||Dep. period can't be less than 90 months & 1 days for this scheme for deposit_period_mths#
+3|0960100000002121|NPR|096||Dep. period can't be less than 90 months & 1 days for this scheme for deposit_period_mths#
+5|0960100000003121|NPR|096||Dep. period can't be less than 90 months & 1 days for this scheme for deposit_period_mths#
+7|0960100000003127|NPR|096||Invalid Account Given : Field - Foracid, Value - 09601290150101#
+8|0960100000004121|NPR|096||Dep. period can't be less than 90 months & 1 days for this scheme for deposit_period_mths#
+9|0960100000004123|NPR|096||Dep. period can't be less than 30 months & 1 days for this scheme for deposit_period_mths#
+
+ 83       0960100000114401                               Upload can be done for Sols Belonging to Passed Set. Service Outlet Pass
+ed is [00049976], and Set Id passed is  [ALL]
+
+10742|114891|0990100004832048|NPR|17-07-2010 00:00:00||Cheque Issue Date Is Less Than Account Opening Date, Above Error occured for A/C : 0990100004832048/NPR#
+10743|114892|0990100004832048|NPR|17-07-2010 00:00:00||Cheque Issue Date Is Less Than Account Opening Date, Above Error occured for A/C : 0990100004832048/NPR#
+
+7|0960100000003127|NPR|096||Invalid Account Given : Field - Foracid, Value - 09601290150101#
+10|0960100000004127|NPR|096||Invalid Account Given : Field - Foracid, Value - 09601290150101#
+13|0960100000005127|NPR|096||Invalid Account Given : Field - Foracid, Value - 09601290150101#
+
+7|0960100000003127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+10|0960100000004127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+13|0960100000005127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+16|0960100000006127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+19|0960100000007127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+22|0960100000008127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+25|0960100000009127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+28|0960100000010127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+31|0960100000011127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+34|0960100000012127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+37|0960100000013127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+38|0960100000014121|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+39|0960100000014127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+41|0960100000015127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+43|0960100000016127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+45|0960100000017127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+47|0960100000018127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+49|0960100000019127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+51|0960100000020127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+53|0960100000021127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+55|0960100000022127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+57|0960100000023127|NPR|096||The sol id of operative account and enetred sol id does not match :  [00101290150101/001/096]#
+
+  99823                20214         1030100000243201  NPR           10-04-2019 00:00:00
+                                                     Cheque Book already issued Cheque Starting no :            20214 No Of Leaves : 1
+
+
+ 94       09601080070101         T              BI         NPR                      345000        D              15-11-2013          PI             N         Value d
+ate [15-11-2013 00:00:00] should be greater than Min Value Date [15-07-2020 00:00:00]
+
+
+   97       0960100000018127       T              BI         NPR                     1000000        C              29-11-2013          PI             N         The val
+ue date must be same as the open effective date., [07-11-2013], of the account for PI (Principal Base) and ID (Balance Base) deposit accounts
+
+1|0960100000001621|Invalid Advance Nature Code [38]/[EA]
+1|0960100000001621|Invalid Free Code [97]/[MIG]
+2|0960100000001623|Invalid Advance Nature Code [38]/[HB]
+2|0960100000001623|Invalid Free Code [97]/[MIG]
+3|0960100000001625|Invalid Advance Nature Code [38]/[HA]
+3|0960100000001625|Invalid Free Code [97]/[MIG]
+4|0960100000001631|Invalid Advance Nature Code [38]/[IA]
+4|0960100000001631|Invalid Free Code [97]/[MIG]
+5|0960100000001635|Invalid Advance Nature Code [38]/[KB]
+5|0960100000001635|Invalid Free Code [97]/[MIG]
+6|0960100000001637|Invalid Free Code [97]/[MIG]
+7|0960100000001655|Invalid Advance Nature Code [38]/[KF]
+7|0960100000001655|Invalid Free Code [97]/[MIG]
+8|0960100000001657|Invalid Advance Nature Code [38]/[HB]
+8|0960100000001657|Invalid Free Code [97]/[MIG]
+9|0960100000001660|Invalid Advance Nature Code [38]/[KE]
+9|0960100000001660|Invalid Free Code [97]/[MIG]
+10|0960100000002621|Invalid Advance Nature Code [38]/[EA]
+10|0960100000002621|Invalid Free Code [97]/[MIG]
+11|0960100000002623|Invalid Advance Nature Code [38]/[HB]
+11|0960100000002623|Invalid Free Code [97]/[MIG]
+12|0960100000002631|Invalid Advance Nature Code [38]/[KE]
+
+   15       0960100000002127       T              BI         NPR                       80000        C              16-07-2020          PI             N         Wrong V
+alue For The Field, Account: [0960100000002127]
+
+
+   21       0960100000003127       T              BI         NPR                       25000        C              16-07-2020          PI             N         The val
+ue date must be same as the open effective date., [08-08-2013], of the account for PI (Principal Base) and ID (Balance Base) deposit accounts
+
+   110      09601080070101         T              BI         NPR                      500000        D              23-12-2013          PI             N         Value d
+ate [23-12-2013 00:00:00] should be greater than Min Value Date [15-07-2020 00:00:00]
+
+
+   114      09601080070101         T              BI         NPR                       80000        D              06-01-2014          PI             N         Value d
+ate [06-01-2014 00:00:00] should be greater than Min Value Date [15-07-2020 00:00:00
+
+ 1354     09601080070101         T              BI         NPR                   100000.00        D              16-07-2020          PI             Y         Unbalan
+ced Transaction, Credit And Debit Amounts Not Equal [    3104114990.00] [    3097303990.00], For Tran Id. & Tran Date [S10807706] [16-07-2020 00:00:00]
+
+3|0960100000001625|The Repayment Period Cannot Exceedfor scheme
+4|0960100000001631|The Repayment Period Months Cannot Exceedfor scheme
+7|0960100000001655|Invalid Advance Nature Code [38]/[FF]
+
+11|0960100000002623|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+
+78|0960100000014660|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+80|0960100000015635|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+84|0960100000016621|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+86|0960100000016637|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+87|0960100000016655|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+89|0960100000017621|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+91|0960100000017637|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+94|0960100000018621|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+96|0960100000018637|Loan amount should not be less than Min. Loan Amt. specified at schm lvl
+
+76|0960100000014637|Invalid Service Outlet
+
+ 371        1020100000117660   Operative Account should not be given for Multi Source Repayment
+ 
+ 362        1020100000001621   Invalid Service Outlet
+
+     363        1020100000001625   Invalid Service Outlet
+
+     351        1000100000131660   Operative Account should not be given for Multi Source Repayment
+	 
+	  99999     000000000031380          0990100010890048  NPR
+                                                     Invalid Date Given : Field -chq_issu_date, Value - 05-02-201
+
+
+       100000    000000000031380          0990100010890048  NPR
+                                                     Invalid Date Given : Field -chq_issu_date, Value - 05-02-20
+													 
+													       1104        0960100000285655           Total Int Dmd amt should be less than total transaction amt for interest
+
+          1106        0960100000288655           Total Int Dmd amt should be less than total transaction amt for interest
+
+          1107        0960100000289655           Total Int Dmd amt should be less than total transaction amt for interest
+
+          1117        0960100000292655           Total Int Dmd amt should be less than total transaction amt for interest
+
+          1126        0960100000293655           Total Int Dmd amt should be less than total transaction amt for interest
+
+=========================================================================================================================================================================================
+SECOND MIGRATION
+
+Rejected - Error on table MAINRETAIL_MIG, column RELATIONSHIPCREATEDBYID.
+
+Record 24965: Rejected - Error on table MAINRETAIL_MIG, column OCCUPATION_CODE.
+ORA-12899: value too large for column OCCUPATION_CODE (actual: 7, maximum: 5)
+
+Record 259:
+
+R004589368	MAINRETAIL_MIG	Category validation failed for CONTACT_OCCUPATION
+R004589449	MAINRETAIL_MIG	Category validation failed for CONTACT_OCCUPATION
+R004589452	MAINRETAIL_MIG	Category validation failed for CONTACT_OCCUPATION
+
+(R004589566
+R004589566
+R004589685
+R004589685
+R004590075 
+no start date)
+
+R004589566	ADDRESS_MIG	Start_Date is mandatory
+R004589566	ADDRESS_MIG	Start_Date is mandatory
+
+R004589513	GROUPHOUSEHOLD_MIG	GroupID is Invalid 
+R004589513	GROUPHOUSEHOLD_MIG	Mapping validation failed for GROUPID and GROUPNAME 
+
+C004684348  --PIPE
+
+SHORT_NAME_NATIVE1 = b.CLIENT_CODE
+
+(C004683669
+C004683669) address
+
+C004686598 -- DCSED
+
+C004685062	CORP_ADDRESS_MIG	Address_line1 is mandatory
+C004685062	CORP_ADDRESS_MIG	Address_line1 is mandatory
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+
+--RL003 LRS
+
+Use PumoriPlusCTZ1
+Declare @MigDate date, @v_MigDate nvarchar(15), @IntCalTillDate date
+select  @MigDate=Today ,@IntCalTillDate=LastDay   from ControlTable;
+set @v_MigDate=REPLACE(REPLACE(CONVERT(VARCHAR,@MigDate,105), ' ','-'), ',','') 
+ 
+select 
+--MainCode as MainCode,
+foracid  foracid                    ,
+flow_id  flow_id                    ,
+convert(varchar,flow_start_date,105)  flow_start_date            ,
+flow_start_date as flow_start_date_test,
+ISNULL(lr_freq_type,'')  lr_freq_type               ,
+ISNULL(lr_freq_week_num,'')  lr_freq_week_num   ,        
+ISNULL(convert(nvarchar,lr_freq_week_day),'')  lr_freq_week_day  ,         
+ISNULL(convert(nvarchar,right(flow_start_date,2)),'') lr_freq_start_dd          ,
+ISNULL(convert(nvarchar,lr_freq_months),'')  lr_freq_months  ,         
+ISNULL(convert(nvarchar,lr_freq_days),'') lr_freq_days,
+'P' lr_freq_hldy_stat	,
+
+--case when flow_id ='INDEM' then RIGHT(SPACE(3)+CAST('0' AS VARCHAR(3)),3)
+--else RIGHT(SPACE(3)+CAST(num_of_flows AS VARCHAR(3)),3) end as    num_of_flows  ,
+
+RIGHT(SPACE(3)+CAST(num_of_flows AS VARCHAR(3)),3)  as    num_of_flows  ,        
+case when flow_id in('PRDEM','EIDEM') AND flow_amt =0 THEN RIGHT(SPACE(17)+CAST('0.01' AS VARCHAR(17)),17)
+	when flow_id ='INDEM' AND flow_amt<> 0 then '0'
+	ELSE RIGHT(SPACE(17)+CAST(flow_amt AS VARCHAR(17)),17) END flow_amt                     ,
+ISNULL(convert(nvarchar,instlmnt_pcnt),'')  instlmnt_pcnt              ,
+ISNULL(convert(nvarchar,num_of_dmds),'')   num_of_dmds               ,
+case when @MigDate>flow_start_date then @v_MigDate --   Next Dmd Date shld not be entered if Flow Start Dt. is greater than BOD Dt.
+else '' end as next_dmd_date ,
+case when flow_id= 'EIDEM' THEN isnull(CONVERT(VARCHAR(10),next_int_dmd_date,105),'')
+ELSE '' END AS next_int_dmd_date            ,
+
+case when flow_id= 'EIDEM' THEN ISNULL(convert(nvarchar,lr_int_freq_type),'')
+	ELSE '' END AS      lr_int_freq_type       ,
+ISNULL(convert(nvarchar,lr_int_freq_week_num),'')  lr_int_freq_week_num       ,
+ISNULL(convert(nvarchar,lr_int_freq_week_day),'')    lr_int_freq_week_day     ,
+ISNULL(convert(nvarchar,right(flow_start_date,2)),'') lr_int_freq_start_dd         ,
+ISNULL(convert(nvarchar,lr_int_freq_months),'') lr_int_freq_months           ,
+--ISNULL(convert(nvarchar,lr_int_freq_days),'') lr_int_freq_days             ,
+ISNULL(convert(nvarchar,''),'') lr_int_freq_days             ,
+'P' lr_int_freq_hldy_stat        ,
+ISNULL(convert(nvarchar,instlmnt_ind),'') instlmnt_ind			     
+ from FINMIG.dbo.LRS LS 
+--where foracid in ('0480100000001652','0160100000001655')
+ORDER BY foracid,flow_id DESC,flow_start_date_test
+
+

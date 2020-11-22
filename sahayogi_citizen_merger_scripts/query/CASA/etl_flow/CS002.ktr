@@ -1,0 +1,3177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>CS002</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2018/02/25 11:14:21.130</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2018/02/25 11:14:21.130</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>sahayogi_test</name>
+    <server>192.168.82.39</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>PPIVSahayogiVBL</database>
+    <port>1433</port>
+    <username>dbaral</username>
+    <password>Encrypted 2be98afc86aa7f2e4a918bc71d2c3fd89</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Table input</from>
+      <to>CS002</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>CS002</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator />
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>G:\CITIZEN\OUTPUT\Casa_Od\CS002_remaining</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>Y</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>foracid</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>16</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>wtax_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>wtax_amount_scope_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>wtax_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>8</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>wtax_floor_limit</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>CIF_id</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>32</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>cust_cr_pref_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>cust_dr_pref_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>id_cr_pref_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>id_dr_pref_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>chnl_cr_pref_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>chnl_dr_pref_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>Pegged_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>peg_frequency_in_months</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>4</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>peg_frequency_in_days</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_type_cr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_week_num_cr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_week_day_cr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_start_dd_cr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>2</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_hldy_stat_cr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>next_int_run_date_cr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_type_dr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_week_num_dr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_week_day_dr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_start_dd_dr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>2</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_freq_hldy_stat_dr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>next_int_run_date_dr</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ledg_num</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>emp_id</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>acct_opn_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Mode_of_oper_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Gl_sub_head_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Schm_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Chq_alwd_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Pb_ps_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Frez_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Frez_reason_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_text</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>240</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>acct_Status</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_1</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_2</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_3</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_4</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_5</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_6</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_7</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_8</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_9</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>free_code_10</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_tbl_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>acct_loc_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>acct_crncy_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>sol_id</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>8</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>acct_mgr_user_id</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>acct_name</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>80</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>swift_allowed_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>last_tran_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>last_any_tran_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>xclude_for_comb_stmt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>stmt_cust_id</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>32</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>chrg_level_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>pbf_download_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>wtax_level_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>sector_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>sub_sector_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>purpose_of_advn</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>nature_of_advn</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>industry_type</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_dr_acct_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_dr_acid</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>16</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>sanct_lim</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>Drwng_power</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>dacc_lim_abs</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>dacc_lim_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>8</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>max_alwd_advn_lim</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>health_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>sanct_levl_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>sanct_ref_num</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>25</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>lim_sanct_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>lim_exp_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>lim_review_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>loan_paper_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>sanct_auth_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ecgc_appl_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ecgc_dr_acid</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>16</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>due_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>rpc_acct_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>disb_ind</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Compound_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>daily_comp_int_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>COMP_Date_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>disc_rate_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>dummy</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>100</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>acct_status_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>iban_number</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>34</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ias_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>channel_id</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>channel_level_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_suspense_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>Penal_int_Suspense_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>Chrge_off_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>pd_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>pd_xfer_Date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Chrge_off_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Chrge_off_principal</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>Pending_interest</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>Principal_recovery</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>interest_recovery</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>Charge_off_type</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>master_acct_num</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>16</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>penal_prod_mthd_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>penal_rate_mthd_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>waive_min_coll_int</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>rule_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ps_diff_freq_rel_party_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>swift_diff_freq_rel_party_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>add_type</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>12</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Phone_type</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>12</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Email_type</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>12</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>accrued_penal_int_recovery</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>penal_int_recovery</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>coll_int_recovery</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>coll_penal_int_recovery</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>pending_penal_interest</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>pending_penal_booked_interest</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>int_rate_prd_in_months</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>4</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>int_rate_prd_in_days</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>penal_int_tbl_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>penal_pref_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>interpolation_method</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>hedged_acct_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>used_for_net_off_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>alt1_acct_name</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>80</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>security_indicator</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>debt_seniority</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>security_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>8</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Debit_Interest_Method</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Service_chrge_collection_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Last_purge_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>total_project_cost</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>loss_carry_fwd</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>unadj_profit_carry_fwd</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>collect_excess_profit</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>adj_order_for_carry_fwd</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>bank_profit_share_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>bank_loss_share_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>profit_adj_freq_type</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>profit_adj_freq_week_num</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>profit_adj_freq_week_day</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>profit_adj_freq_start_dd</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>2</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>profit_adj_freq_hldy_stat</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>next_profit_adj_due_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>tot_bank_captl_share_pcnt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>profit_adj_grace_prd_mths</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>4</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>profit_adj_grace_prd_days</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>3</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>adj_cycle_end_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>unadj_profit_carry_fwd_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>unadj_profit_settle_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>unadj_profit_charge_off_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>loss_carry_fwd_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>loss_settle_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>loss_charge_off_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>profit_adj_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>loss_adj_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>tot_expected_profit_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>bank_profit_share_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>bank_loss_share_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>actual_profit_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>actual_loss_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>collected_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>excess_profit_collected_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>broken_prd_prft_in_legacy</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>unclaim_status</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>unclaim_status_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>orig_gl_sub_head_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>pais_applicable_flg</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>pais_bank_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>pais_cust_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>pais_debited_amt</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>17</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>pais_effective_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>pais_coverage_end_date</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>10</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>primary_crop_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>primary_crop_state_code</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>5</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>primary_no_of_crop_in_year</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>sahayogi_test</connection>
+    <sql>use PPIVSahayogiVBL
+--cs002
+
+Declare @MigDate date, @v_MigDate nvarchar(15),@v_StatusDate nvarchar(15)
+set @MigDate = (select Today from ControlTable);
+set @v_MigDate=REPLACE(REPLACE(CONVERT(VARCHAR,@MigDate,105), ' ','-'), ',','')
+set @v_StatusDate = REPLACE(CONVERT(VARCHAR,(select Today-1 from ControlTable),105), ' ','-')
+
+
+
+DECLARE @DAY DATE, @v_DAY nvarchar(15),@MTH DATE,@v_MONTH nvarchar(15),
+@QTR DATE, @v_QTR nvarchar(15), @HYR DATE,@v_HYR nvarchar(15), @YR DATE, @v_YR nvarchar(15)
+
+set @DAY = (select LastDay from ControlTable);
+set @v_DAY=REPLACE(REPLACE(CONVERT(VARCHAR,@DAY,105), ' ','-'), ',','')
+
+set @MTH = (select NextMonthEnd from FINMIG.dbo.NextIntRunDate );
+set @v_MONTH=REPLACE(REPLACE(CONVERT(VARCHAR,@MTH,105), ' ','-'), ',','')
+
+set @QTR = (select NextQtrEnd from FINMIG.dbo.NextIntRunDate );
+set @v_QTR=REPLACE(REPLACE(CONVERT(VARCHAR,@QTR,105), ' ','-'), ',','')
+
+set @HYR = (select NextHalfYearEnd from FINMIG.dbo.NextIntRunDate );
+set @v_HYR=REPLACE(REPLACE(CONVERT(VARCHAR,@HYR,105), ' ','-'), ',','')
+
+set @YR = (select NextYeaerEnd from FINMIG.dbo.NextIntRunDate );
+set @v_YR=REPLACE(REPLACE(CONVERT(VARCHAR,@YR,105), ' ','-'), ',','')
+
+
+---------------FREE CODE 3 MAPPING QUERY-----------------------
+IF OBJECT_ID('tempdb.dbo.#FREECODE3', 'U') IS NOT NULL
+  DROP TABLE #FREECODE3;
+  
+select * INTO #FREECODE3 from (
+SELECT  distinct MainCode,BranchCode,UPPER(CONVERT(VARCHAR,CustType)) as CustType,F.FnacleCode as FinacleCode from AcCustType A JOIN
+		FINMIG..FREECODE3 F ON UPPER(CONVERT(VARCHAR,CustType))=F.PumoriCustType
+	where  A.CustTypeCode ='B')X
+
+
+IF OBJECT_ID('tempdb.dbo.#FinalMaster', 'U') IS NOT NULL
+  DROP TABLE #FinalMaster;
+
+select * INTO #FinalMaster from (
+SELECT  DISTINCT
+			   t1.ClientCode
+              ,AcType
+              ,ClientTag3
+              ,IntDrRate
+              ,IntCrRate
+              --,t1.Limit as Limit
+            
+             ,case when t1.Limit='0' and round(t1.GoodBaln,2)&lt;'0' then ABS(round(GoodBaln,2))
+					WHEN t1.Limit&lt;abs(round(t1.GoodBaln,2)) and round(t1.GoodBaln,2)&lt;'0' then ABS(round(GoodBaln,2))
+			   else t1.Limit end as Limit
+			   ,t1.Limit as Limit1
+			   
+              ,BranchCode
+			  ,(select F_SolId from FINMIG..SolMap where BranchCode = t1.BranchCode) as F_SolId
+              ,case when t1.Limit='0' and round(GoodBaln,2)&lt;'0' then @MigDate
+              else LimitExpiryDate end as LimitExpiryDate_origi
+              --,LimitExpiryDate 
+              ,AcOpenDate as AcOpenDate_original
+              --DURGA  DAI JAN 1 2019
+              ,case when LimitExpiryDate&lt;AcOpenDate	and LimitExpiryDate&lt;='2000-12-31' then @DAY --last day
+					else  LimitExpiryDate end as LimitExpiryDate
+              ,case when LimitExpiryDate&lt;AcOpenDate	and LimitExpiryDate>'2000-12-31' then dateadd(day,-2,LimitExpiryDate)
+					else case when datediff(day,AcOpenDate,LimitExpiryDate)=1 then dateadd(day,-2,LimitExpiryDate)  
+					 else AcOpenDate end
+					 end as AcOpenDate
+
+              ,MainCode
+              ,isnull(TaxPercentOnInt,0) as TaxPercentOnInt
+              ,IntPostFrqCr
+              ,TaxPostFrq
+              ,'02' as PremiumRateDr
+              ,DistrictCode
+              ,GoodBaln
+      		 ,CyDesc as acct_crncy_code
+              ,IsBlocked
+              ,t1.CyCode
+              ,IntPostFrqDr
+              ,t1.Name
+              ,IsDormant
+              ,LastTranDate
+              ,(select LastTranDate from FINMIG.dbo.LAST_TRANS_DATE l where t1.MainCode=l.MainCode) as trans_LastTranDate
+              ,t1.AcOfficer
+              ,ClientCategory
+FROM Master t1 join ClientTable t2
+on t1.ClientCode = t2.ClientCode
+join CurrencyTable t3
+on t1.CyCode = t3.CyCode
+where (AcType IN (SELECT ACTYPE FROM FINMIG.dbo.PRODUCT_MAPPING WHERE MODULE ='OVERDRAFT' and ACTYPE &lt;&gt;'01')
+ or (AcType = '01' and (t1.Limit &lt;&gt;'0' or (t1.Limit='0' and Balance&lt;'0') or (t1.Limit='0' and IntDrAmt&lt;&gt;'0' and t1.CyCode='01')))) ---  AND Balance >0 need to add in logic	
+AND BranchCode not in('242','243')
+--and AcType not in ('4A', '49')
+AND IsBlocked &lt;&gt; 'C'
+)x;
+
+
+--Main Script
+select
+(select ForAcid from FINMIG.dbo.ForAcidOD f where f.MainCode = t1.MainCode) as foracid,
+'N' wtax_flg                                               ,
+'' wtax_amount_scope_flg                                  ,
+'0' wtax_pcnt                                              ,
+'0' wtax_floor_limit                                       ,
+
+(select cif_id from FINMIG.dbo.GEN_CIFID  G where G.ClientCode = t1.ClientCode) as CIF_id,
+'0' cust_cr_pref_pcnt                                      ,
+'0' cust_dr_pref_pcnt                                      ,
+'0' id_cr_pref_pcnt                                        ,
+
+
+	  
+case when (select F_SCHEME_CODE from FINMIG.dbo.ForAcidOD sch where sch.MainCode = t1.MainCode) = 'SH501'
+then RIGHT(SPACE(10)+CAST(8 AS VARCHAR(10)),10) else 
+case
+	when (select INTEREST_TABLE_CODE from FINMIG.dbo.ForAcidOD f where f.MainCode = t1.MainCode) like '%ZERO%' 
+	THEN RIGHT(SPACE(10)+CAST(isnull(t1.IntDrRate, '') AS VARCHAR(10)),10) 
+else '' end end as id_dr_pref_pcnt,
+
+
+'0' chnl_cr_pref_pcnt                                      ,
+'0' chnl_dr_pref_pcnt                                      ,
+'N' Pegged_flg                                             ,
+'' peg_frequency_in_months                                ,
+'' peg_frequency_in_days                                  ,
+'' int_freq_type_cr                                       ,
+'' int_freq_week_num_cr                                   ,
+'' int_freq_week_day_cr                                   ,
+'' int_freq_start_dd_cr                                   ,
+'' int_freq_hldy_stat_cr                                  ,
+'' next_int_run_date_cr                                   ,
+'D' int_freq_type_dr                                       ,
+'' int_freq_week_num_dr                                   ,
+'' int_freq_week_day_dr                                   ,
+'' int_freq_start_dd_dr                                   ,
+'N' int_freq_hldy_stat_dr                                  ,
+	case when IntPostFrqDr = '1' then @v_MigDate		--next int run date from mapping table
+	when IntPostFrqDr = '4' then @v_MONTH
+	when IntPostFrqDr = '5' then @v_QTR
+	when IntPostFrqDr = '6' then @v_HYR
+	when IntPostFrqDr = '7' then @v_YR
+else '31-12-2099' end AS next_int_run_date_dr,
+'' ledg_num                                               ,
+
+
+'' AS emp_id    ,
+
+isnull(REPLACE(REPLACE(CONVERT(VARCHAR,AcOpenDate,105), ' ','-'), ',',''), (select REPLACE(REPLACE(CONVERT(VARCHAR,min(TranDate),106), ' ','-'), ',','')
+from Master m join TransDetail t on t.MainCode = m.MainCode
+where m.MainCode = t1.MainCode
+group by m.MainCode)) acct_opn_date                                          ,
+'OTH' as  Mode_of_oper_code                                      ,
+(select GL_SUBHEAD_CODE from FINMIG.dbo.ForAcidOD f where f.MainCode = t1.MainCode)  as Gl_sub_head_code       --changed                                ,
+,(select F_SCHEME_CODE from FINMIG.dbo.ForAcidOD f where f.MainCode = t1.MainCode)   AS Schm_code        --changed                                      ,
+--,'Y' Chq_alwd_flg                                           ,
+
+,case when AcType in ('19','2E','2F', '1D') then 'N'
+else 'Y' end Chq_alwd_flg
+
+,'S' Pb_ps_code,
+'' Frez_code            
+,'' Frez_reason_code
+,MainCode free_text                                              ,
+'A' acct_Status
+,isnull((select Code from FINMIG..Freecode1 f where f.MainCode = t1.MainCode), '') as free_code_1
+
+,'' free_code_2                                            ,
+ISNULL((select FinacleCode from #FREECODE3 A
+	where  t1.MainCode = A.MainCode AND t1.BranchCode = A.BranchCode),'MIG') free_code_3 ,
+'' free_code_4                                            ,
+'' free_code_5                                            ,
+'' free_code_6                                            ,
+'' free_code_7                                            ,
+'' free_code_8                                            ,
+'' free_code_9                                            ,
+'' free_code_10                                           ,
+(select INTEREST_TABLE_CODE from FINMIG.dbo.ForAcidOD f where f.MainCode = t1.MainCode) as int_tbl_code,
+
+'SVBL' acct_loc_code,
+acct_crncy_code as acct_crncy_code                                       ,
+F_SolId sol_id                                                 ,
+'UBSADMIN' acct_mgr_user_id                                       ,
+replace(t1.Name,'"', '') acct_name                                              ,
+'N' swift_allowed_flg                                      ,
+REPLACE(REPLACE(CONVERT(VARCHAR,isnull(LastTranDate,AcOpenDate),105), ' ','-'), ',','') last_tran_date                                         ,
+REPLACE(CONVERT(VARCHAR,isnull(t1.trans_LastTranDate, AcOpenDate),105), ' ','-') last_any_tran_date ,
+'' xclude_for_comb_stmt                                   ,
+'' stmt_cust_id                                           ,
+'' chrg_level_code                                        ,
+'' pbf_download_flg                                       ,
+'' wtax_level_flg                                         ,
+
+isnull((select Code from FINMIG..Sectorwise s where s.MainCode = t1.MainCode), 'DEPO') AS sector_code,	
+ISNULL((select Code from FINMIG..SubSectorWise ss where ss.MainCode = t1.MainCode) ,'DEPO') sub_sector_code                                        ,
+
+'MIGRA' purpose_of_advn ,
+
+ISNULL((select Code from FINMIG..NatureOfAdvance na where na.MainCode = t1.MainCode) ,'MIGR') as nature_of_advn
+
+,ISNULL((select Code from FINMIG..IndustryType it where it.MainCode = t1.MainCode),'MIGR') industry_type                                          ,
+
+/*
+CASE WHEN t1.AcType in ('49','4A') then 
+	case when exists (select 1 from Master m where m.ClientCode = t1.ClientCode and m.AcType in ('18') and m.BranchCode = '001' AND m.IsBlocked &lt;&gt;'C')  then 'O'
+		else 'S' end
+	else 'S' end as  int_dr_acct_flg                                        ,
+*/
+'S' as int_dr_acct_flg
+,''  as int_dr_acid,
+
+RIGHT(SPACE(17)+CAST(isnull(t1.Limit,'0') AS VARCHAR(17)),17)  sanct_lim                                              ,
+RIGHT(SPACE(17)+CAST(isnull(t1.Limit,'0') AS VARCHAR(17)),17) Drwng_power                                            ,
+RIGHT(SPACE(17)+CAST(' ' AS VARCHAR(17)),17) dacc_lim_abs                                           ,
+RIGHT(SPACE(8)+CAST(' ' AS VARCHAR(8)),8) dacc_lim_pcnt                                          ,
+RIGHT(SPACE(17)+CAST(isnull(t1.Limit,'0') AS VARCHAR(17)),17) max_alwd_advn_lim                 ,
+'MIG' health_code                                            , --need verified 'same as RC001'
+'HO' sanct_levl_code                                        ,
+t1.MainCode sanct_ref_num                                          , 
+/* DURGA  DAI JAN 1 2019
+case when Limit = '0' then @v_MigDate
+else REPLACE(REPLACE(CONVERT(VARCHAR,isnull(AcOpenDate,@v_MigDate),105), ' ','-'), ',','') end lim_sanct_date  ,
+case when Limit = '0' then '31-12-2099'
+	when LimitExpiryDate&lt;AcOpenDate then @v_MigDate
+	when LimitExpiryDate>'2099-12-31' then '31-12-2099'
+else isnull(REPLACE(CONVERT(VARCHAR,LimitExpiryDate,105), ' ','-'),'31-12-2099') end lim_exp_date                                           ,
+case when Limit = '0' then '30-12-2099'
+	when LimitExpiryDate&lt;AcOpenDate then REPLACE(CONVERT(VARCHAR,dateadd(day,-1,@MigDate),105), ' ','-')
+	when LimitExpiryDate>'2099-12-31' then '30-12-2099'
+else isnull(REPLACE(CONVERT(VARCHAR,LimitExpiryDate-1,105), ' ','-'),'30-12-2099') end lim_review_date                                        ,
+REPLACE(REPLACE(CONVERT(VARCHAR,AcOpenDate,105), ' ','-'), ',','') loan_paper_date   
+*/ 
+    
+REPLACE(REPLACE(CONVERT(VARCHAR,AcOpenDate,105), ' ','-'), ',','') AS lim_sanct_date,
+case when LimitExpiryDate>'2099-12-31' then '31-12-2099'
+else isnull(REPLACE(CONVERT(VARCHAR,LimitExpiryDate,105), ' ','-'),'31-12-2099') end  AS lim_exp_date ,
+CASE when LimitExpiryDate>'2099-12-31' then '30-12-2099'
+else isnull(REPLACE(CONVERT(VARCHAR,LimitExpiryDate-1,105), ' ','-'),'30-12-2099') end AS lim_review_date  ,  
+
+REPLACE(REPLACE(CONVERT(VARCHAR,AcOpenDate,105), ' ','-'), ',','') loan_paper_date                      ,
+'ACO' sanct_auth_code                                        ,
+'' ecgc_appl_flg                                          ,
+'' ecgc_dr_acid                                           ,
+--REPLACE(REPLACE(CONVERT(VARCHAR,DueDate,105), ' ','-'), ',','') due_date                                               ,
+REPLACE(CONVERT(VARCHAR,(select Min(DueDate) from PastDuedList P where t1.MainCode = P.ReferenceNo and IsIntDue = 'T'  group by ReferenceNo),105),' ','-') due_date,                                          
+'' rpc_acct_flg                                           ,
+'' disb_ind                                               ,
+'' Compound_date                                          ,
+'' daily_comp_int_flg                                     ,
+'' COMP_Date_flg                                          ,
+'' disc_rate_flg                                          ,
+'' dummy                                                  ,
+--case when IsDormant='T' then REPLACE(REPLACE(CONVERT(VARCHAR,dateadd(MM,6,isnull(LastTranDate,AcOpenDate)),105), ' ','-'), ',','') else '01-01-1900' end acct_status_date                                       ,
+--case when IsDormant='T' then @v_StatusDate else '' end as acct_status_date,  --changed in sahayogi migration
+'' as acct_status_date,
+
+'' iban_number                                            ,
+'' ias_code                                               ,
+'' channel_id                                             ,
+'' channel_level_code                                     ,
+
+/*   -------2018-10-30 as per Roman Dai's mail
+
+--RIGHT(SPACE(17)+CAST(NormalInt AS VARCHAR(17)),17) int_suspense_amt,
+RIGHT(SPACE(17)+CAST((select sum(NormalInt) from PastDuedList P where t1.MainCode = P.ReferenceNo and IsIntDue = 'T' group by ReferenceNo) AS VARCHAR(17)),17) int_suspense_amt,
+
+case when  t1.MainCode in (select ReferenceNo from PastDuedList P where t1.MainCode = P.ReferenceNo and IsIntDue = 'T')
+ then isnull((select case when (PenalIntAmt+IntOnInt) &lt;0 or (PenalIntAmt+IntOnInt) is null  
+	then RIGHT(SPACE(17)+CAST('0' AS VARCHAR(17)),17)
+else RIGHT(SPACE(17)+CAST(PenalIntAmt+IntOnInt AS VARCHAR(17)),17) end  from LoanMaster L
+where t1.MainCode = L.MainCode),'0') else '' end as Penal_int_Suspense_amt                                 ,
+
+
+'' Chrge_off_flg                                          ,
+--isnull(ReferenceNo,'') as pd_flg,
+case when t1.MainCode in (select ReferenceNo from PastDuedList P where t1.MainCode = P.ReferenceNo and IsIntDue = 'T') then 'Y' else '' end as pd_flg,
+--REPLACE(REPLACE(CONVERT(VARCHAR,DueDate,105), ' ','-'), ',','') pd_xfer_Date                                           ,
+isnull(REPLACE(CONVERT(VARCHAR,(select Min(DueDate) from PastDuedList P where t1.MainCode = P.ReferenceNo and IsIntDue = 'T' group by ReferenceNo),105),' ','-'),'') pd_xfer_Date,                                          
+
+*/ -------2018-10-30 as per Roman Dai's mail
+
+'' int_suspense_amt, -------2018-10-30 as per Roman Dai's mail
+'' Penal_int_Suspense_amt, -------2018-10-30 as per Roman Dai's mail
+'' Chrge_off_flg  ,
+'N' pd_flg,		-------2018-10-30 as per Roman Dai's mail
+'' pd_xfer_Date,	-------2018-10-30 as per Roman Dai's mail
+
+'' Chrge_off_date                                         ,
+'' Chrge_off_principal                                    ,
+'' Pending_interest                                       ,
+'' Principal_recovery                                     ,
+'' interest_recovery                                      ,
+'' Charge_off_type                                        ,
+'' master_acct_num                                        ,
+'' penal_prod_mthd_flg                                    ,
+'' penal_rate_mthd_flg                                    ,
+'' waive_min_coll_int                                     ,
+'' rule_code                                              ,
+'' ps_diff_freq_rel_party_flg                             ,
+'' swift_diff_freq_rel_party_flg                          ,
+'' add_type                                               ,
+'' Phone_type                                             ,
+'' Email_type                                             ,
+'' accrued_penal_int_recovery                             ,
+'' penal_int_recovery                                     ,
+'' coll_int_recovery                                      ,
+'' coll_penal_int_recovery                                ,
+'' pending_penal_interest                                 ,
+'' pending_penal_booked_interest                          ,
+'' int_rate_prd_in_months                                 ,
+'' int_rate_prd_in_days                                   ,
+'' penal_int_tbl_code                                     ,
+'' penal_pref_pcnt                                        ,
+'' interpolation_method                                   ,
+'' hedged_acct_flg                                        ,
+'' used_for_net_off_flg                                   ,
+'' alt1_acct_name                                         ,
+'' security_indicator                                     ,
+'' debt_seniority                                         ,
+'' security_code                                          ,
+'' Debit_Interest_Method                                  ,
+'Y' Service_chrge_collection_flg                           ,
+REPLACE(REPLACE(CONVERT(VARCHAR,AcOpenDate-1,105), ' ','-'), ',','') Last_purge_date                                        ,
+'' total_project_cost                                     ,
+'' loss_carry_fwd                                         ,
+'' unadj_profit_carry_fwd                                 ,
+'' collect_excess_profit                                  ,
+'' adj_order_for_carry_fwd                                ,
+'' bank_profit_share_pcnt                                 ,
+'' bank_loss_share_pcnt                                   ,
+'' profit_adj_freq_type                                   ,
+'' profit_adj_freq_week_num                               ,
+'' profit_adj_freq_week_day                               ,
+'' profit_adj_freq_start_dd                               ,
+'' profit_adj_freq_hldy_stat                              ,
+'' next_profit_adj_due_date                               ,
+'' tot_bank_captl_share_pcnt                              ,
+'' profit_adj_grace_prd_mths                              ,
+'' profit_adj_grace_prd_days                              ,
+'' adj_cycle_end_date                                     ,
+'' unadj_profit_carry_fwd_amt                             ,
+'' unadj_profit_settle_amt                                ,
+'' unadj_profit_charge_off_amt                            ,
+'' loss_carry_fwd_amt                                     ,
+'' loss_settle_amt                                        ,
+'' loss_charge_off_amt                                    ,
+'' profit_adj_amt                                         ,
+'' loss_adj_amt                                           ,
+'' tot_expected_profit_amt                                ,
+'' bank_profit_share_amt                                  ,
+'' bank_loss_share_amt                                    ,
+'' actual_profit_amt                                      ,
+'' actual_loss_amt                                        ,
+'' collected_amt                                          ,
+'' excess_profit_collected_amt                            ,
+'' broken_prd_prft_in_legacy                              ,
+'' unclaim_status                                         ,
+'' unclaim_status_date                                    ,
+'' orig_gl_sub_head_code                                  ,
+'' pais_applicable_flg                                    ,
+'' pais_bank_amt                                          ,
+'' pais_cust_amt                                          ,
+'' pais_debited_amt                                       ,
+'' pais_effective_date                                    ,
+'' pais_coverage_end_date                                 ,
+'' primary_crop_code                                      ,
+'' primary_crop_state_code                                ,
+'' primary_no_of_crop_in_year 
+FROM #FinalMaster t1
+--where t1.MainCode in (select MainCode from FINMIG..ForAcidOD where ForAcid in (select ForAcid from FINMIG..od_foracid))
+--order by foracid
+</sql>
+    <limit />
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

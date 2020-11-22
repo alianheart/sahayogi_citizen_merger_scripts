@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>penal interest</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2018/10/11 13:02:31.994</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2018/10/11 13:02:31.994</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>sahayogi_test</name>
+    <server>192.168.82.39</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>PPIVSahayogiVBL</database>
+    <port>1433</port>
+    <username>dbaral</username>
+    <password>Encrypted 2be98afc86aa7f2e4a918bc71d2c3fd89</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Loan penal Int</from>
+      <to>Lonal Penal output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>OD penal Int</from>
+      <to>OD Penal output</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Loan penal Int</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>sahayogi_test</connection>
+    <sql>
+--Loan penal interest 
+
+use PPIVSahayogiVBL;
+Declare @MigDate date, @v_MigDate nvarchar(15), @BACID nvarchar(100)='MIGRA'; --&lt;000>MIGRA_&lt;AUD>_LAA
+
+set @MigDate = (select Today from ControlTable);
+
+
+
+
+--TEMP TABLE
+IF OBJECT_ID('tempdb.dbo.#loan_temp', 'U') IS NOT NULL
+  DROP TABLE #loan_temp;
+
+select * into #loan_temp from
+(
+select 
+BranchCode,
+ReferenceNo,
+Flow_ID,
+IntOverDues as IntOverDues,
+isnull(IntOnIntOverDues,0) AS IntOnIntOverDues,
+isnull(IntOnPriOverDues,0) as IntOnPriOverDues,
+PriOverDues AS PriOverDues,
+dmd_date 
+from FINMIG.dbo.PastDue where
+ReferenceNo not in (select MainCode from FINMIG..LOAN_OVERDUE_PENAL)
+--and ReferenceNo = '00303300072834000002'
+
+
+UNION ALL
+
+select 
+t1.BranchCode,
+t1.ReferenceNo,
+Flow_ID,
+IntOverDues as IntOverDues,
+isnull(IntOnIntOverDues,0) as IntOnIntOverDues,
+case when Flow_ID ='PIDEM' THEN isnull(IntOnPriOverDues,0)--+CAST(diffint AS NUMERIC(17,2)) 
+	ELSE '0.00' END as IntOnPriOverDues,
+PriOverDues AS PriOverDues,
+dmd_date dmd_date
+from FINMIG.dbo.PastDue t1 join 
+FINMIG.dbo.LOAN_OVERDUE_PENAL t2 on t1.ReferenceNo=t2.MainCode
+where FLOWID='PIDEM' --and ReferenceNo = '00303300072834000002'
+--group by BranchCode,t1.ReferenceNo,Flow_ID,diffint
+
+union all 
+
+select 
+t1.BranchCode,
+t1.ReferenceNo,
+Flow_ID,
+IntOverDues as IntOverDues,
+case when ISNULL(IntOnIntOverDues,'')&lt;&gt;'' THEN isnull(IntOnIntOverDues,0)--+CAST(diffint AS NUMERIC(17,2)) 
+	ELSE '0.00' END as IntOnIntOverDues,
+isnull(IntOnPriOverDues,0) as IntOnPriOverDues,
+PriOverDues AS PriOverDues,
+dmd_date dmd_date
+from FINMIG.dbo.PastDue t1 join 
+FINMIG.dbo.LOAN_OVERDUE_PENAL t2 on t1.ReferenceNo=t2.MainCode
+where FLOWID='OIDEM' --and ReferenceNo = '00303300072834000002'
+--group by BranchCode,t1.ReferenceNo,FLOWID,diffint,Flow_ID
+
+UNION ALL 
+
+select 
+t1.BranchCode,
+t1.ReferenceNo,
+Flow_ID,
+case when Flow_ID ='INDEM' THEN IntOverDues--+CAST(diffint AS NUMERIC(17,2))
+	ELSE '0.00' END as IntOverDues,
+isnull(IntOnIntOverDues,0) as IntOnIntOverDues,
+isnull(IntOnPriOverDues,0) as IntOnPriOverDues,
+PriOverDues AS PriOverDues,
+dmd_date dmd_date
+from FINMIG.dbo.PastDue t1 join 
+FINMIG.dbo.LOAN_OVERDUE_PENAL t2 on t1.ReferenceNo=t2.MainCode
+where FLOWID='INDEM' --and ReferenceNo = '00303300072834000002'
+--group by BranchCode,t1.ReferenceNo,Flow_ID,diffint
+)x
+
+
+SELECT 
+t1.F_SolId  AS SOL_ID
+--,ReferenceNo
+,'' AS ACID
+,t1.ForAcid AS FORACID
+,t1.CyDesc  AS CRNCY_CODE
+,convert(varchar,t2.dmd_date,105) AS VALUE_DATE
+,sum(IntOverDues) AS INT_DUE
+,t3.IntDrRate+2 as PNLRATE_INTDUE
+,sum(IntOnIntOverDues) as PNLINTAMT_INT
+,sum(t2.PriOverDues) as PRN_DUE
+,'2' AS PENAL_RATE
+,sum(t2.IntOnPriOverDues) as PNLINTAMT_PRN
+--,SUM(t2.IntOverDues)+SUM(t2.IntOnIntOverDues)+SUM(t2.IntOnPriOverDues) as TOTAL_PNL_AMT
+,sum(t2.IntOnIntOverDues)+sum(t2.IntOnPriOverDues) as TOTAL_PNL_AMT ---logic given by roman dai(2018-11-23)
+,'N' as DEL_FLG
+from FINMIG..ForAcidLAA t1
+ JOIN #loan_temp t2 on  t1.MainCode =t2.ReferenceNo and t1.BranchCode=t2.BranchCode
+JOIN FINMIG.dbo.TotalLoan t3 on t1.MainCode =t3.MainCode and t1.BranchCode=t2.BranchCode
+--where t1.ForAcid = '0960100000001623'
+--group by t2.dmd_date,SOL_ID, 
+GROUP BY t1.BranchCode,t1.F_SolId,t1.ForAcid,t1.CyDesc,t2.dmd_date,t3.IntDrRate
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Lonal Penal output</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>G:\CITIZEN\OUTPUT\POST MIG\la_penal_int</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>TXT</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>SOL_ID</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ACID</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>FORACID</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>CRNCY_CODE</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>VALUE_DATE</name>
+        <type>Timestamp</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>INT_DUE</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PNLRATE_INTDUE</name>
+        <type>Number</type>
+        <format>0.#####</format>
+        <currency />
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PNLINTAMT_INT</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PRN_DUE</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PENAL_RATE</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PNLINTAMT_PRN</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>TOTAL_PNL_AMT</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>DEL_FLG</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>480</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>OD Penal output</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator>|</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding />
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField />
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>G:\CITIZEN\OUTPUT\POST MIG\od_penal_int</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>TXT</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>SOL_ID</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ACID</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>FORACID</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>CRNCY_CODE</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>VALUE_DATE</name>
+        <type>Timestamp</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>INT_DUE</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PNLRATE_INTDUE</name>
+        <type>Number</type>
+        <format>0.#####</format>
+        <currency />
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PNLINTAMT_INT</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PRN_DUE</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PENAL_RATE</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PNLINTAMT_PRN</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>TOTAL_PNL_AMT</name>
+        <type>BigNumber</type>
+        <format>######0.0###################;-######0.0###################</format>
+        <currency />
+        <decimal>.</decimal>
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>DEL_FLG</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>480</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>OD penal Int</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>sahayogi_test</connection>
+    <sql>
+--od penal interest 
+
+use PPIVSahayogiVBL
+Declare @MigDate date, @v_MigDate nvarchar(15), @BACID nvarchar(100)='MIGRA'; --&lt;000>MIGRA_&lt;AUD>_LAA
+
+set @MigDate = (select Today from ControlTable);
+
+
+
+
+--TEMP TABLE
+IF OBJECT_ID('tempdb.dbo.#loan_temp', 'U') IS NOT NULL
+  DROP TABLE #loan_temp;
+
+select * into #loan_temp from
+(
+select 
+BranchCode,
+ReferenceNo,
+Flow_ID,
+IntOverDues as IntOverDues,
+isnull(IntOnIntOverDues,0) AS IntOnIntOverDues,
+isnull(IntOnPriOverDues,0) as IntOnPriOverDues,
+PriOverDues AS PriOverDues,
+dmd_date 
+from FINMIG.dbo.PastDue where
+ReferenceNo not in (select MainCode from FINMIG..OD_OVERDUE_PENAL)
+and  ReferenceNo not in (select MainCode from Master where IntDrAmt &lt;= 0)
+--and ReferenceNo = '00404300040325000003'
+
+UNION ALL
+
+select 
+BranchCode,
+t1.ReferenceNo,
+Flow_ID,
+IntOverDues as IntOverDues,
+isnull(IntOnIntOverDues,0) as IntOnIntOverDues,
+case when Flow_ID ='PIDEM' THEN isnull(IntOnPriOverDues,0)
+	ELSE '0.00' END as IntOnPriOverDues,
+PriOverDues AS PriOverDues,
+dmd_date dmd_date
+from FINMIG.dbo.PastDue t1 join 
+FINMIG.dbo.OD_OVERDUE_PENAL t2 on t1.ReferenceNo=t2.MainCode
+where FLOWID='PIDEM' and MainCode not in (select MainCode from Master where IntDrAmt &lt;= 0)
+--and ReferenceNo = '00404300040325000003'
+--group by BranchCode,t1.ReferenceNo,Flow_ID,diffint
+
+union all 
+
+select 
+BranchCode,
+t1.ReferenceNo,
+Flow_ID,
+IntOverDues as IntOverDues,
+case when FLOWID ='OIDEM' THEN isnull(IntOnIntOverDues,0)
+	ELSE '0.00' END as IntOnIntOverDues,
+isnull(IntOnPriOverDues,0) as IntOnPriOverDues,
+PriOverDues AS PriOverDues,
+dmd_date dmd_date
+from FINMIG.dbo.PastDue t1 join 
+FINMIG.dbo.OD_OVERDUE_PENAL t2 on t1.ReferenceNo=t2.MainCode
+where FLOWID='OIDEM' and MainCode not in (select MainCode from Master where IntDrAmt &lt;= 0)
+--and ReferenceNo = '00404300040325000003'
+--group by BranchCode,t1.ReferenceNo,FLOWID,diffint,Flow_ID
+
+UNION ALL 
+
+select 
+BranchCode,
+t1.ReferenceNo,
+Flow_ID,
+case when Flow_ID ='INDEM' THEN IntOverDues--+CAST(diffint AS NUMERIC(17,2))
+	ELSE '0.00' END as IntOverDues,
+isnull(IntOnIntOverDues,0) as IntOnIntOverDues,
+isnull(IntOnPriOverDues,0) as IntOnPriOverDues,
+PriOverDues AS PriOverDues,
+dmd_date dmd_date
+from FINMIG.dbo.PastDue t1 join 
+FINMIG.dbo.OD_OVERDUE_PENAL t2 on t1.ReferenceNo=t2.MainCode
+where FLOWID='INDEM' and MainCode not in (select MainCode from Master where IntDrAmt &lt;= 0)
+--and ReferenceNo = '00404300040325000003'
+--group by BranchCode,t1.ReferenceNo,Flow_ID,diffint
+)x
+
+
+--Main Query
+
+SELECT 
+t1.MainCode,
+t1.F_SolId  AS SOL_ID
+,'' AS ACID
+,t1.ForAcid AS FORACID
+,'NPR'  AS CRNCY_CODE
+,convert(varchar,t2.dmd_date,105) AS VALUE_DATE
+,round(cast(sum(IntOverDues) as numeric(17,2)),2) AS INT_DUE
+,t3.IntDrRate+2 as PNLRATE_INTDUE
+,round(cast(sum(t2.IntOnIntOverDues) as numeric(17,2)),2) as PNLINTAMT_INT
+,round(cast(sum(t2.PriOverDues) as numeric(17,2)),2) as PRN_DUE
+,'2' AS PENAL_RATE
+,round(cast(sum(t2.IntOnPriOverDues) as numeric(17,2)),2) as PNLINTAMT_PRN
+--,SUM(t2.IntOverDues)+SUM(t2.IntOnIntOverDues)+SUM(t2.IntOnPriOverDues) as TOTAL_PNL_AMT
+,round(cast(sum(t2.IntOnIntOverDues) as numeric(17,2)),2)+round(cast(sum(t2.IntOnPriOverDues) as numeric(17,2)),2) as TOTAL_PNL_AMT ---logic given by roman dai(2018-11-23)
+,'N' as DEL_FLG
+ from FINMIG..ForAcidOD t1
+ JOIN #loan_temp t2 on  t1.MainCode =t2.ReferenceNo and t1.BranchCode =t2.BranchCode
+JOIN PPIVSahayogiVBL..Master t3 on t1.MainCode =t3.MainCode
+--where t1.MainCode = '00500100052004000001'
+GROUP BY t1.BranchCode,t1.F_SolId,t1.ForAcid,t1.MainCode,t2.dmd_date,t3.IntDrRate
+order by t1.ForAcid
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

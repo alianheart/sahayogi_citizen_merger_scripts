@@ -1,0 +1,119 @@
+
+use PPIVSahayogiVBL;
+Declare @MigDate date, @v_MigDate nvarchar(15), @BACID nvarchar(100)='MIGRA'; --<000>MIGRA_<AUD>_LAA
+
+set @MigDate = (select Today from ControlTable);
+
+--TEMP TABLE
+IF OBJECT_ID('tempdb.dbo.#loan_temp', 'U') IS NOT NULL
+  DROP TABLE #loan_temp;
+
+select * into #loan_temp from
+(
+
+select 
+BranchCode,
+ReferenceNo,
+Flow_ID,
+IntOverDues as flow_amt_indem,
+isnull(IntOnIntOverDues,0)+isnull(IntOnPriOverDues,0) as flow_amt_pidem,
+dmd_date 
+from FINMIG.dbo.PastDue m where Flow_ID <>'PRDEM'
+AND ReferenceNo not in (select ReferenceNo from FINMIG..OverDuesGreaterThanINT)
+and ReferenceNo not in (select MainCode from Master where IntDrAmt <= 0)
+
+UNION ALL
+
+select 
+BranchCode,
+t1.ReferenceNo,
+Flow_ID,
+sum(IntOverDues) as flow_amt_indem,
+case when Flow_ID ='PIDEM' THEN sum(isnull(IntOnIntOverDues,0)+isnull(IntOnPriOverDues,0))+CAST(diff AS NUMERIC(17,2)) 
+	ELSE '0.00' END as flow_amt_pidem,
+max(dmd_date) dmd_date
+from FINMIG.dbo.PastDue t1 join 
+FINMIG.dbo.OverDuesGreaterThanINT t2 on t1.ReferenceNo=t2.ReferenceNo
+where Flow_ID not in ('PRDEM')
+AND FLOWID='PIDEM'
+and t1.ReferenceNo not in (select MainCode from Master where IntDrAmt <= 0)
+group by BranchCode,t1.ReferenceNo,Flow_ID,diff
+
+union all
+
+select 
+BranchCode,
+t1.ReferenceNo,
+Flow_ID,
+case when Flow_ID ='INDEM' THEN sum(IntOverDues)+CAST(diff AS NUMERIC(17,2))
+	ELSE '0.00' END as flow_amt_indem,
+sum(isnull(IntOnIntOverDues,0)+isnull(IntOnPriOverDues,0)) as flow_amt_pidem,
+max(dmd_date) dmd_date
+from FINMIG.dbo.PastDue t1 join 
+FINMIG.dbo.OverDuesGreaterThanINT t2 on t1.ReferenceNo=t2.ReferenceNo
+where Flow_ID not in ('PRDEM')
+AND FLOWID='INDEM'
+and t1.ReferenceNo not in (select MainCode from Master where IntDrAmt <= 0)
+group by BranchCode,t1.ReferenceNo,Flow_ID,diff
+)x
+
+
+
+select sum(flow_amt) from (
+SELECT --TOP 10 
+f.ForAcid AS foracid1, 
+'T' AS tran_type
+,MainCode
+,'BI' AS tran_sub_type
+, f.F_SolId+substring(f.ForAcid,4,2)+AIR_BACID  AS foracid  --<000>MIGRA_<AUD>_<LAA> --AIR_BACID
+--,CASE WHEN ct.CyDesc='IRS' THEN 'INR' ELSE ct.CyDesc END AS tran_crncy_code
+,f.CyDesc as tran_crncy_code
+,f.F_SolId AS sol_id
+--,RIGHT(SPACE(17)+CAST(t.flow_amt AS VARCHAR(17)),17) AS flow_amt  -- Need to confirm
+,case when Flow_ID='INDEM' THEN t.flow_amt_indem
+else t.flow_amt_pidem end AS flow_amt  -- Need to confirm
+
+,'C' AS part_tran_type
+,'I' AS type_of_dmds
+
+/*
+,case when t.dmd_date<(select AcOpenDate from Master M where t.ReferenceNo = M.MainCode) then (select convert(varchar,AcOpenDate,105) from Master M where t.ReferenceNo = M.MainCode)
+ else CONVERT(VARCHAR(10),t.dmd_date,105) end AS value_date  -- Need to confirm
+--,Flow_ID AS flow_id -- Need to confirm about Penal Due
+
+,case when t.dmd_date<(select AcOpenDate from Master M where t.ReferenceNo = M.MainCode) then (select convert(varchar,AcOpenDate,105) from Master M where t.ReferenceNo = M.MainCode)
+ else CONVERT(VARCHAR(10),t.dmd_date,105) end AS   dmd_date 
+ */
+ --changed in sahayogi migration
+
+ ,CONVERT(VARCHAR(10),@MigDate,105) as value_date
+ ,'' AS flow_id,
+CONVERT(VARCHAR(10),@MigDate,105) as dmd_date
+,'N' AS last_tran_flg
+,'N' AS tran_end_indicator
+,'N' AS advance_payment_flg
+,'' AS prepayment_type
+,'' AS int_coll_on_prepayment_flg
+--,m.Remarks AS tran_rmks   -- Need to confirm  (Loan Master remarks)
+, f.ForAcid as tran_rmks
+,convert(varchar,@MigDate,105) AS tran_particular
+ from #loan_temp t
+--LEFT JOIN Master m on t.ReferenceNo = m.MainCode AND t.BranchCode = m.BranchCode
+join FINMIG.dbo.ForAcidLAA f on 
+t.ReferenceNo = f.MainCode and t.BranchCode =f.BranchCode
+ join  FINMIG.dbo.MGRA_AC_LOAN_AIR ma ON ma.SCHEME=f.F_SCHEME_CODE 
+ AND substring(f.ForAcid,4,2)=substring(ma.FORACID,4,2)
+--t.BranchCode = f.BranchCode and f.Scheme_Type = 'LAA' --lm.MainCode = f.MainCode
+where 1=1--round(m.Balance,2) <> 0 
+ and (t.flow_amt_indem>0 or t.flow_amt_pidem>0))t
+--order by foracid1,flow_amt,part_tran_type desc
+
+
+
+
+
+
+
+
+
+/*4th*/

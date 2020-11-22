@@ -1,0 +1,21 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CASA",
+    "\\CASA\\CASA-query",
+    "\\CASA\\CASA-query\\interest check",
+    "\\CASA\\etl_flow",
+    "\\CASA\\etl_flow\\CS005",
+    "\\CASA\\OD_overdues",
+    "\\CORPORATE",
+    "\\CORPORATE\\etl_flow",
+    "\\LOAN",
+    "\\LOAN\\QUERY",
+    "\\LOAN\\QUERY\\lrs",
+    "\\SIGNATURE",
+    "\\SIGNATURE\\query",
+    "\\TESTING PURPOSE AFTER MIGRATION"
+  ],
+  "SelectedNode": "\\CASA\\CASA-query\\CS005_CAA.sql",
+  "PreviewInSolutionExplorer": false
+}
